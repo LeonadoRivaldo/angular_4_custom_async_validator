@@ -1,0 +1,10 @@
+<form [formGroup]="userform">
+  <div class="form-group">
+    <input placeholder="@Email" type="text" class="form-control" formControlName="email">
+    {{userform.controls.email.errors | json}}
+  </div>
+  <div class="form-group">
+    <input placeholder="@Login" type="text" class="form-control" formControlName="login">
+    {{userform.controls.login.errors | json}}
+  </div>
+</form>
